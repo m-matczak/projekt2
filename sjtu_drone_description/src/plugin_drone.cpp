@@ -300,8 +300,8 @@ void DroneSimpleController::LoadControllerSettings(physics::ModelPtr _model, sdf
     controllers_.velocity_y.Load(_sdf, "velocityXY");
     controllers_.velocity_z.Load(_sdf, "velocityZ");
     
-    controllers_.pos_x.Load(_sdf, "positionZ");
-    controllers_.pos_y.Load(_sdf, "positionZ");
+    controllers_.pos_x.Load(_sdf, "positionXY");
+    controllers_.pos_y.Load(_sdf, "positionXY");
     controllers_.pos_z.Load(_sdf, "positionZ");
     
     RCLCPP_INFO_STREAM(rclcpp::get_logger("DroneSimpleController"), "Using the PID parameters: \n" <<
